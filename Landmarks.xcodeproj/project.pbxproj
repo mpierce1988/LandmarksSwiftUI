@@ -25,6 +25,7 @@
 		B9DE8B5E2A3F75CD0085091D /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE8B5D2A3F75CD0085091D /* Badge.swift */; };
 		B9DE8B612A3F77380085091D /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE8B602A3F77380085091D /* HexagonParameters.swift */; };
 		B9DE8B632A3F77460085091D /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE8B622A3F77460085091D /* BadgeSymbol.swift */; };
+		B9DE8B652A3F7A470085091D /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B9DE8B642A3F7A470085091D /* hikeData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		B9DE8B5D2A3F75CD0085091D /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		B9DE8B602A3F77380085091D /* HexagonParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		B9DE8B622A3F77460085091D /* BadgeSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
+		B9DE8B642A3F7A470085091D /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		B918AF022A3E81C9003841BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B9DE8B642A3F7A470085091D /* hikeData.json */,
 				B918AEFA2A3E7DDA003841BE /* landmarkData.json */,
 			);
 			path = Resources;
@@ -215,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DE8B652A3F7A470085091D /* hikeData.json in Resources */,
 				B918AEF02A3E670D003841BE /* Preview Assets.xcassets in Resources */,
 				B918AEED2A3E670D003841BE /* Assets.xcassets in Resources */,
 				B918AEFB2A3E7DDA003841BE /* landmarkData.json in Resources */,
