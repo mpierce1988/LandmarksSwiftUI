@@ -10,6 +10,7 @@ import Foundation
 final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
+    @Published var profile = Profile.default
     
     // Computed array of landmarks that are featured
     var features: [Landmark] {
