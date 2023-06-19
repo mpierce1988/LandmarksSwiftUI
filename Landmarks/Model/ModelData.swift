@@ -11,6 +11,11 @@ final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
     
+    // Computed array of landmarks that are featured
+    var features: [Landmark] {
+        landmarks.filter { $0.isFeatured }
+    }
+    
     // Computed value that maps string keys to arrays of landmark objects
     // computes the value based on the current landmarks array value
     var categories: [String: [Landmark]] {
