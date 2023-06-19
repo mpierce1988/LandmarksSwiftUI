@@ -10,6 +10,14 @@ import Foundation
 final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
+    
+    // Computed value that maps string keys to arrays of landmark objects
+    // computes the value based on the current landmarks array value
+    var categories: [String: [Landmark]] {
+        // Group all landmarks that have the same category into the same array
+        // and use the category as the key in this dictionary
+        Dictionary(grouping: landmarks, by: {$0.category.rawValue })
+    }
 }
 
 
